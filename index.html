@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Jaroop JS Test</title>
+	<link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css' />
+	<link rel='stylesheet' href='assets/css/main.css' />
+</head>
+<body>
+	<div class='container'>
+		<h1>Javascript Test</h1>
+		<hr />
+		<div class='row'>
+			<div class='form-box col-sm-5'>
+				<form name='myform' onsubmit='validate();return false;'>
+					<label>Term:</label>
+					<span class='error error-term'>This field is required</span>
+					<input type='text' name='term' class='form-control' placeholder='Enter term' maxlength='50' />
+					<br/>
+					<label>Type:</label>
+					<span class='error error-type'>This field is required</span>
+					<select name='type' class='form-control'>
+						<option value=''>Choose a Type</option>
+						<option value='1'>Positive</option>
+						<option value='0'>Negative</option>
+					</select>
+					<br/>
+					<a class='btn btn-primary' href='javascript:validate()'>Add Term</a>
+				</form>
+			</div>
+			<div class='col-sm-7'>
+				<div class='positive-box col-sm-6'>
+					<label>Positive:</label>
+					<div class='attr-container'>
+						<ul class='attr nav'></ul>
+					</div>
+				</div>
+				<div class='negative-box col-sm-6'>
+					<label>Negative:</label>
+					<div class='attr-container'>
+						<ul class='attr nav'></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
+	<script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='assets/js/app.js'></script>
+</body>
+</html>

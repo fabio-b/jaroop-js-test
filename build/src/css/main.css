@@ -1,0 +1,33 @@
+@import "includes/config.css";
+
+.form-box {
+	background-color: #efefef;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 10px;
+}
+.attr-item {
+	list-style: none;
+	padding: 6px 0;
+	& span, & a {
+		color: #fff;
+		font-weight: 700;
+		border-radius: 5px;
+		padding: 5px;
+		cursor: pointer;
+	}
+	& span a{
+		text-decoration: none;
+	}
+}
+.positive-box .attr-item span {
+	background-color: var(--green);
+}
+.negative-box .attr-item span {
+	background-color: var(--red);
+}
+
+.error {
+	display: none;
+	color: var(--red);
+}
